@@ -67,6 +67,15 @@ Example config for Apache 2.4 in prefork mode:
         # Access to repository images in single server setup
         RewriteRule ^/var/([^/]+/)?storage/images(-versioned)?/.* - [L]
 
+        # Legacy rewrite rules
+        RewriteRule ^/var/([^/]+/)?cache/(texttoimage|public)/.* - [L]
+        RewriteRule ^/design/[^/]+/(stylesheets|images|javascript|fonts)/.* - [L]
+        RewriteRule ^/share/icons/.* - [L]
+        RewriteRule ^/extension/[^/]+/design/[^/]+/(stylesheets|flash|images|lib|javascripts?)/.* - [L]
+        RewriteRule ^/packages/styles/.+/(stylesheets|images|javascript)/[^/]+/.* - [L]
+        RewriteRule ^/packages/styles/.+/thumbnail/.* - [L]
+        RewriteRule ^/var/storage/packages/.* - [L]
+
         # Makes it possible to place your favicon at the root `web` directory in your eZ instance.
         # It will then be served directly.
         RewriteRule ^/favicon\.ico - [L]
@@ -121,6 +130,15 @@ If you do not have an access to use virtualhost config, use the `.htaccess` file
 
     # Access to repository images in single server setup
     RewriteRule ^var/([^/]+/)?storage/images(-versioned)?/.* - [L]
+
+    # Legacy rewrite rules
+    RewriteRule ^/var/([^/]+/)?cache/(texttoimage|public)/.* - [L]
+    RewriteRule ^/design/[^/]+/(stylesheets|images|javascript|fonts)/.* - [L]
+    RewriteRule ^/share/icons/.* - [L]
+    RewriteRule ^/extension/[^/]+/design/[^/]+/(stylesheets|flash|images|lib|javascripts?)/.* - [L]
+    RewriteRule ^/packages/styles/.+/(stylesheets|images|javascript)/[^/]+/.* - [L]
+    RewriteRule ^/packages/styles/.+/thumbnail/.* - [L]
+    RewriteRule ^/var/storage/packages/.* - [L]
 
     # Additional Assetic rules for prod environments
     # ! Remember to run php ezpublish/console assetic:dump --env=prod on changes

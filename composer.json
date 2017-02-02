@@ -1,13 +1,13 @@
 {
-    "name": "ezsystems/ezplatform",
+    "name": "ezsystems/ezplatform-legacy",
     "description": "eZ Platform distribution",
-    "homepage": "https://github.com/ezsystems/ezplatform",
+    "homepage": "https://github.com/ezsystems/ezplatform-legacy",
     "license": "GPL-2.0",
     "type": "project",
     "authors": [
         {
             "name": "eZ dev-team & eZ Community",
-            "homepage": "https://github.com/ezsystems/ezplatform/contributors"
+            "homepage": "https://github.com/ezsystems/ezplatform-legacy/contributors"
         }
     ],
     "replace": {
@@ -27,6 +27,7 @@
         "sensio/generator-bundle": "^2.3|^3.0",
         "incenteev/composer-parameter-handler": "~2.0",
         "tedivm/stash-bundle": "~0.4",
+        "ezsystems/legacy-bridge": "^1.1",
         "ezsystems/ezpublish-kernel": "~6.7@dev",
         "ezsystems/repository-forms": "^1.4",
         "ezsystems/ezplatform-solr-search-engine": "^1.1@dev",
@@ -62,7 +63,10 @@
             "eZ\\Bundle\\EzPublishCoreBundle\\Composer\\ScriptHandler::clearCache",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
             "eZ\\Bundle\\EzPublishCoreBundle\\Composer\\ScriptHandler::dumpAssets",
-            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile"
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
+            "eZ\\Bundle\\EzPublishLegacyBundle\\Composer\\ScriptHandler::installAssets",
+            "eZ\\Bundle\\EzPublishLegacyBundle\\Composer\\ScriptHandler::installLegacyBundlesExtensions",
+            "eZ\\Bundle\\EzPublishLegacyBundle\\Composer\\ScriptHandler::generateAutoloads"
         ],
         "post-install-cmd": [
             "@build"
@@ -81,6 +85,7 @@
     "extra": {
         "symfony-app-dir": "app",
         "symfony-web-dir": "web",
+        "ezpublish-legacy-dir": "ezpublish_legacy",
         "___symfony-assets-install": "One of 'symlink', 'relative' (symlinks) or 'hard'",
         "symfony-assets-install": "relative",
         "incenteev-parameters": {

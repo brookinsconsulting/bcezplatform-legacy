@@ -9,9 +9,9 @@ ezpublish:
 
     # Siteaccess configuration, with one siteaccess per default
     siteaccess:
-        list: [site]
+        list: [site, admin]
         groups:
-            site_group: [site]
+            site_group: [site, admin]
         default_siteaccess: site
         match:
             URIElement: 1
@@ -29,3 +29,8 @@ ezpublish:
             # so removing eng-GB from this list may lead to errors or content not being shown, unless you change
             # all eng-GB data to other locales first.
             languages: [eng-GB]
+
+ez_publish_legacy:
+    system:
+        admin:
+           legacy_mode: true
