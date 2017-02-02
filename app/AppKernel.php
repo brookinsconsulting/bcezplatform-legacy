@@ -49,6 +49,7 @@ class AppKernel extends Kernel
             new EzSystems\EzContentOnTheFlyBundle\EzSystemsEzContentOnTheFlyBundle(),
             new Bazinga\Bundle\JsTranslationBundle\BazingaJsTranslationBundle(),
             new JMS\TranslationBundle\JMSTranslationBundle(),
+            new eZ\Bundle\EzPublishLegacyBundle\EzPublishLegacyBundle($this),
             new AppBundle\AppBundle(),
         );
 
