@@ -42,7 +42,7 @@
         "symfony/expression-language": "~2.4",
         "sensio/framework-extra-bundle": "~3.0",
         "ezsystems/content-on-the-fly-prototype": "~0.1.7",
-        "willdurand/js-translation-bundle": "^2.7@dev"
+        "willdurand/js-translation-bundle": "^2.6.4"
     },
     "require-dev": {
         "ezsystems/ezplatform-i18n": "^1.0@dev",
@@ -63,10 +63,10 @@
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
             "eZ\\Bundle\\EzPublishCoreBundle\\Composer\\ScriptHandler::clearCache",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
-            "eZ\\Bundle\\EzPublishCoreBundle\\Composer\\ScriptHandler::dumpAssets",
-            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
             "eZ\\Bundle\\EzPublishLegacyBundle\\Composer\\ScriptHandler::installAssets",
             "eZ\\Bundle\\EzPublishLegacyBundle\\Composer\\ScriptHandler::installLegacyBundlesExtensions",
+            "eZ\\Bundle\\EzPublishCoreBundle\\Composer\\ScriptHandler::dumpAssets",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
             "eZ\\Bundle\\EzPublishLegacyBundle\\Composer\\ScriptHandler::generateAutoloads"
         ],
         "post-install-cmd": [
