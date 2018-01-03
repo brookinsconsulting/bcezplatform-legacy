@@ -5,6 +5,8 @@ VarDir=var/site
 
 [ExtensionSettings]
 ActiveExtensions[]
+ActiveExtensions[]=ngsymfonytools
+ActiveExtensions[]=ezrichtext
 ActiveExtensions[]=ezdemo
 ActiveExtensions[]=ezjscore
 ActiveExtensions[]=ezoe

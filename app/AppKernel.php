@@ -45,6 +45,7 @@ class AppKernel extends Kernel
             // eZ Publish Legacy
             new eZ\Bundle\EzPublishLegacyBundle\EzPublishLegacyBundle($this),
             new EzSystems\EzPlatformXmlTextFieldTypeBundle\EzSystemsEzPlatformXmlTextFieldTypeBundle(),
+            new Netgen\Bundle\RichTextDataTypeBundle\NetgenRichTextDataTypeBundle(),
             // Application
             new AppBundle\AppBundle(),
         ];
