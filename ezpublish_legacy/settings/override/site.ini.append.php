@@ -16,7 +16,7 @@ SessionNameHandler=custom
 DefaultAccess=site
 SiteList[]
 SiteList[]=site
-SiteList[]=admin
+SiteList[]=legacy_admin
 RootNodeDepth=1
 
 [UserSettings]
@@ -26,7 +26,7 @@ LogoutRedirect=/
 CheckValidity=false
 AvailableSiteAccessList[]
 AvailableSiteAccessList[]=site
-AvailableSiteAccessList[]=admin
+AvailableSiteAccessList[]=legacy_admin
 MatchOrder=uri
 HostMatchMapItems[]
 
