@@ -46,6 +46,7 @@
         "ezsystems/ezplatform-admin-ui-assets": "^1.0@dev",
         "ezsystems/ezplatform-design-engine": "^1.1",
         "netgen/richtext-datatype-bundle": "^1.1",
+        "netgen/ezplatformsearch": "^1.2",
         "knplabs/knp-menu-bundle": "^2.1",
         "sensio/framework-extra-bundle": "^3.0.2",
         "willdurand/js-translation-bundle": "^2.6.4",
