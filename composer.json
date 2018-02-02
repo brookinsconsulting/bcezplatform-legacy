@@ -1,13 +1,13 @@
 {
-    "name": "ezsystems/ezplatform-legacy",
+    "name": "emodric/ezplatform-legacy",
     "description": "eZ Platform distribution",
-    "homepage": "https://github.com/ezsystems/ezplatform-legacy",
-    "license": "GPL-2.0",
+    "homepage": "https://github.com/emodric/ezplatform-legacy",
+    "license": "GPL-2.0-only",
     "type": "project",
     "authors": [
         {
             "name": "eZ dev-team & eZ Community",
-            "homepage": "https://github.com/ezsystems/ezplatform-legacy/contributors"
+            "homepage": "https://github.com/emodric/ezplatform-legacy/contributors"
         }
     ],
     "replace": {
