@@ -68,6 +68,9 @@
         "sensio/generator-bundle": "~3.1",
         "symfony/phpunit-bridge": "~3.2"
     },
+    "conflict": {
+        "symfony/symfony": "3.4.5"
+    },
     "scripts": {
         "legacy-scripts": [
             "eZ\\Bundle\\EzPublishLegacyBundle\\Composer\\ScriptHandler::installAssets",
