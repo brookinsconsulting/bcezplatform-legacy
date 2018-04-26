@@ -35,16 +35,16 @@
         "doctrine/orm": "^2.5",
         "sensio/distribution-bundle": "^5.0.19",
         "incenteev/composer-parameter-handler": "~2.1",
-        "ezsystems/ezpublish-kernel": "~7.1.0@dev",
+        "ezsystems/ezpublish-kernel": "~7.1.0",
         "ezsystems/ezpublish-legacy": ">=2017.12.2.1",
         "ezsystems/legacy-bridge": "^2.0",
-        "ezsystems/repository-forms": "~2.1.0@dev",
-        "ezsystems/ezplatform-solr-search-engine": "^1.5@dev",
-        "ezsystems/ez-support-tools": "~0.2.0@dev",
-        "ezsystems/ezplatform-http-cache": "~0.5.0@dev",
-        "ezsystems/ezplatform-admin-ui": "~1.1.0@dev",
-        "ezsystems/ezplatform-admin-ui-modules": "~1.1.0@dev",
-        "ezsystems/ezplatform-admin-ui-assets": "~2.0.0@dev",
+        "ezsystems/repository-forms": "~2.1.0",
+        "ezsystems/ezplatform-solr-search-engine": "^1.5",
+        "ezsystems/ez-support-tools": "~0.2.1",
+        "ezsystems/ezplatform-http-cache": "~0.6.0",
+        "ezsystems/ezplatform-admin-ui": "~1.1.0",
+        "ezsystems/ezplatform-admin-ui-modules": "~1.1.0",
+        "ezsystems/ezplatform-admin-ui-assets": "~2.0.0",
         "ezsystems/ezplatform-design-engine": "^1.1",
         "netgen/richtext-datatype-bundle": "^1.1",
         "netgen/ezplatformsearch": "^1.2",
@@ -94,8 +94,6 @@
             "eZ\\Bundle\\EzPublishCoreBundle\\Composer\\ScriptHandler::installWelcomeText"
         ]
     },
-    "minimum-stability": "dev",
-    "prefer-stable": true,
     "config": {
         "bin-dir": "bin",
         "preferred-install": "dist"
