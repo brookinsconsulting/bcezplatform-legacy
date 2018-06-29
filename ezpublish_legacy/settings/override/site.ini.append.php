@@ -1,5 +1,8 @@
 <?php /* #?ini charset="utf-8"?
 
+[DatabaseSettings]
+Charset=utf8mb4
+
 [FileSettings]
 VarDir=var/site
 
