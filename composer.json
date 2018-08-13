@@ -37,7 +37,7 @@
         "incenteev/composer-parameter-handler": "^2.1.3",
         "ezsystems/ezpublish-kernel": "~7.2.0",
         "ezsystems/ezpublish-legacy": ">=2018.06",
-        "ezsystems/legacy-bridge": "^2.0.4",
+        "ezsystems/legacy-bridge": "^2.0.8",
         "ezsystems/repository-forms": "~2.2.0",
         "ezsystems/ezplatform-solr-search-engine": "^1.5.2",
         "ezsystems/ez-support-tools": "^0.2.1",
